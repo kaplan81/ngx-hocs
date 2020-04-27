@@ -1,27 +1,25 @@
-# NgxHocs
+# Angular 9+ Hocs
+
+> Higher-oder Angular 9+ components monorepo.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
-## Development server
+## Purpose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To create a hub of libraries that contain higher-oder components that can be used by the Angular community.
 
-## Code scaffolding
+Here higher-oder components take the shape of [Typescript Class decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Prerequisite
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+In order to be able to use the libraries, your project must be running at least Angular version 9.
 
-## Running unit tests
+The reason for it is that the higher-oder components are using Ivy's API and this will not work in previous versions of Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## @ngx-hocs/unsubscriber
 
-## Running end-to-end tests
+Higher-oder component to automatically unsubscribe from observables in Angular component classes.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Find the description [here](projects/@ngx-hocs/unsubscriber/README.md).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
