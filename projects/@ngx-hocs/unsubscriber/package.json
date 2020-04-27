@@ -1,5 +1,5 @@
 {
-  "name": "@ngx-hocs/unsubscriber",
+  "name": "ngx-hocs-unsubscriber",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^9.1.3",
