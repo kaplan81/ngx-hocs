@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -11,18 +11,17 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "esnext",
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "@hocs-app/*": ["./projects/@hocs/src/app/app/*"],
-      "@hocs-core/*": ["./projects/@hocs/src/app/_core/*"],
-      "@hocs-environments/*": ["./projects/@hocs/src/environments/*"],
-      "@hocs-shared/*": ["./projects/@hocs/src/app/_shared/*"],
-      "@hocs/ngx-unsubscriber": ["dist/@hocs/ngx-unsubscriber"]
+      "@hocs/ngx-unsubscriber": ["./dist/@hocs/ngx-unsubscriber"]
     }
   },
   "angularCompilerOptions": {

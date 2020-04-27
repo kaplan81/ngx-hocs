@@ -33,28 +33,28 @@
         }
       },
       "root": "projects/hocs",
-      "sourceRoot": "projects/hocs/src",
+      "sourceRoot": "projects/hocs-app/src",
       "prefix": "hoc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hocs",
-            "index": "projects/hocs/src/index.html",
-            "main": "projects/hocs/src/main.ts",
-            "polyfills": "projects/hocs/src/polyfills.ts",
-            "tsConfig": "projects/hocs/tsconfig.app.json",
+            "outputPath": "dist/hocs-app",
+            "index": "projects/hocs-app/src/index.html",
+            "main": "projects/hocs-app/src/main.ts",
+            "polyfills": "projects/hocs-app/src/polyfills.ts",
+            "tsConfig": "projects/hocs-app/tsconfig.app.json",
             "aot": true,
-            "assets": ["projects/hocs/src/favicon.ico", "projects/hocs/src/assets"],
-            "styles": ["projects/hocs/src/styles.scss"],
+            "assets": ["projects/hocs-app/src/favicon.ico", "projects/hocs-app/src/assets"],
+            "styles": ["projects/hocs-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/hocs/src/environments/environment.ts",
-                  "with": "projects/hocs/src/environments/environment.prod.ts"
+                  "replace": "projects/hocs-app/src/environments/environment.ts",
+                  "with": "projects/hocs-app/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -94,7 +94,10 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["projects/hocs/tsconfig.app.json", "projects/hocs/tsconfig.spec.json"],
+            "tsConfig": [
+              "projects/hocs-app/tsconfig.app.json",
+              "projects/hocs-app/tsconfig.spec.json"
+            ],
             "exclude": ["**/node_modules/**"]
           }
         }

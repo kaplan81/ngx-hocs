@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UnsubscriberComponent } from './unsubscriber/unsubscriber.component';
+import { DestroyedComponent } from './destroyed/destroyed.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UnsubscriberComponent,
+    DestroyedComponent
   ],
   imports: [
     BrowserModule,
