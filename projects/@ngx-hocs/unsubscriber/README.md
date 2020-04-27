@@ -23,7 +23,7 @@ As simple as that.
 You do not need to implement the `OnDestroy` interface so you would only need to write the `ngOnDestroy()` method is you needed to add extra actions to that Angular lifecycle hook.
 
 ```ts
-import { Unsubscriber } from '@ngx-hocs/unsubscriber';
+import { Unsubscriber } from 'ngx-hocs-unsubscriber';
 
 @Unsubscriber()
 @Component({})
