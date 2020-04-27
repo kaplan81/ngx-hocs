@@ -26,12 +26,7 @@
     "member-ordering": [
       true,
       {
-        "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
-        ]
+        "order": ["static-field", "instance-field", "static-method", "instance-method"]
       }
     ],
     "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
@@ -48,7 +43,7 @@
     },
     "space-before-function-paren": {
       "options": {
-        "anonymous": "never",
+        "anonymous": "always",
         "asyncArrow": "always",
         "constructor": "never",
         "method": "never",
