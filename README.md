@@ -15,7 +15,7 @@ In order to be able to use the libraries, your project must be running at least 
 
 The reason for it is that the higher-oder components are using Ivy's API and this will not work in previous versions of Angular.
 
-## @ngx-hocs/unsubscriber
+## ngx-hocs-unsubscriber
 
 Higher-oder component to automatically unsubscribe from observables in Angular component classes.
 
