@@ -43,3 +43,10 @@ export class SubscribedComponent implements OnInit, OnDestroy {
   }
 }
 ```
+
+You have resolved the unsubscription problem with 2 lines of code:
+
+```ts
+@Unsubscriber()
+takeUntil((this as any).destroyed$)
+```
