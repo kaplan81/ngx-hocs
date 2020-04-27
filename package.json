@@ -1,6 +1,13 @@
 {
   "name": "ngx-hocs",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "author": "Andres Gesteira",
+  "license": "MIT",
+  "keywords": [
+    "Angular",
+    "Typescript",
+    "Ivy"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kaplan81/ngx-hocs.git"

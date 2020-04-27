@@ -9,7 +9,7 @@ Your Angular project must be running at least Angular version 9.
 If that is not a problem, install the library:
 
 ```bash
-npm i @ngx-hocs/unsubscriber
+npm i ngx-hocs-unsubscriber
 ```
 
 ## Usage
