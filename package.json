@@ -1,6 +1,10 @@
 {
   "name": "ngx-hocs",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaplan81/ngx-hocs.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
