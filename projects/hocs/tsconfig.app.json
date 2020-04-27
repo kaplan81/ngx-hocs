@@ -2,13 +2,14 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@hocs-app/*": ["./src/app/app/*"],
+      "@hocs-core/*": ["./src/app/_core/*"],
+      "@hocs-environments/*": ["./src/environments/*"],
+      "@hocs-shared/*": ["./src/app/_shared/*"]
+    }
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"]
 }

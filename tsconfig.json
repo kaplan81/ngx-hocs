@@ -16,10 +16,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@hocs-app/*": ["./projects/hocs/src/app/app/*"],
+      "@hocs-core/*": ["./projects/hocs/src/app/_core/*"],
+      "@hocs-environments/*": ["./projects/hocs/src/environments/*"],
+      "@hocs-shared/*": ["./projects/hocs/src/app/_shared/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
