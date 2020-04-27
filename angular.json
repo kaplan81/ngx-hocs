@@ -103,21 +103,21 @@
         }
       }
     },
-    "@hocs/ngx-unsubscriber": {
+    "@ngx-hocs/unsubscriber": {
       "projectType": "library",
-      "root": "projects/@hocs/ngx-unsubscriber",
-      "sourceRoot": "projects/@hocs/ngx-unsubscriber/src",
+      "root": "projects/@ngx-hocs/unsubscriber",
+      "sourceRoot": "projects/@ngx-hocs/unsubscriber/src",
       "prefix": "hoc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/@hocs/ngx-unsubscriber/tsconfig.lib.json",
-            "project": "projects/@hocs/ngx-unsubscriber/ng-package.json"
+            "tsConfig": "projects/@ngx-hocs/unsubscriber/tsconfig.lib.json",
+            "project": "projects/@ngx-hocs/unsubscriber/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/@hocs/ngx-unsubscriber/tsconfig.lib.prod.json"
+              "tsConfig": "projects/@ngx-hocs/unsubscriber/tsconfig.lib.prod.json"
             }
           }
         },
@@ -125,8 +125,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/@hocs/ngx-unsubscriber/tsconfig.lib.json",
-              "projects/@hocs/ngx-unsubscriber/tsconfig.spec.json"
+              "projects/@ngx-hocs/unsubscriber/tsconfig.lib.json",
+              "projects/@ngx-hocs/unsubscriber/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "npm run build-libs && npm run build-app",
     "build-app": "ng build --prod",
-    "build-libs": "ng build @hocs/ngx-unsubscriber",
-    "build-libs:w": "ng build @hocs/ngx-unsubscriber -- --watch",
+    "build-libs": "ng build @ngx-hocs/unsubscriber",
+    "build-libs:w": "ng build @ngx-hocs/unsubscriber -- --watch",
     "lint": "ng lint"
   },
   "dependencies": {

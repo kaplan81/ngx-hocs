@@ -5,7 +5,7 @@
     "outDir": "../../out-tsc/app",
     "types": [],
     "paths": {
-      "@hocs/ngx-unsubscriber": ["../../dist/@hocs/ngx-unsubscriber"]
+      "@ngx-hocs/unsubscriber": ["../../dist/@ngx-hocs/unsubscriber"]
     }
   },
   "files": ["src/main.ts", "src/polyfills.ts"],

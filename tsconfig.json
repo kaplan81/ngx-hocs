@@ -21,7 +21,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "@hocs/ngx-unsubscriber": ["./dist/@hocs/ngx-unsubscriber"]
+      "@ngx-hocs/unsubscriber": ["./dist/@ngx-hocs/unsubscriber"]
     }
   },
   "angularCompilerOptions": {

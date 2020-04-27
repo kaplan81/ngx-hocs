@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Unsubscriber } from '@hocs/ngx-unsubscriber';
+import { Unsubscriber } from '@ngx-hocs/unsubscriber';
 import { interval, Observable, Subscription } from 'rxjs';
 import { takeUntil, tap } from 'rxjs/operators';
 
