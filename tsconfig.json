@@ -22,10 +22,7 @@
       "@hocs-core/*": ["./projects/@hocs/src/app/_core/*"],
       "@hocs-environments/*": ["./projects/@hocs/src/environments/*"],
       "@hocs-shared/*": ["./projects/@hocs/src/app/_shared/*"],
-      "@hocs/ngx-unsubscriber": [
-        "dist/@hocs/ngx-unsubscriber/hocs-ngx-unsubscriber",
-        "dist/@hocs/ngx-unsubscriber"
-      ]
+      "@hocs/ngx-unsubscriber": ["dist/@hocs/ngx-unsubscriber"]
     }
   },
   "angularCompilerOptions": {
