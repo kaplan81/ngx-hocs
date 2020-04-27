@@ -33,31 +33,28 @@
         }
       },
       "root": "projects/hocs",
-      "sourceRoot": "projects/hocs/src",
+      "sourceRoot": "projects/@hocs/src",
       "prefix": "hoc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/hocs",
-            "index": "projects/hocs/src/index.html",
-            "main": "projects/hocs/src/main.ts",
-            "polyfills": "projects/hocs/src/polyfills.ts",
-            "tsConfig": "projects/hocs/tsconfig.app.json",
+            "index": "projects/@hocs/src/index.html",
+            "main": "projects/@hocs/src/main.ts",
+            "polyfills": "projects/@hocs/src/polyfills.ts",
+            "tsConfig": "projects/@hocs/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/hocs/src/favicon.ico",
-              "projects/hocs/src/assets"
-            ],
-            "styles": ["projects/hocs/src/styles.scss"],
+            "assets": ["projects/@hocs/src/favicon.ico", "projects/@hocs/src/assets"],
+            "styles": ["projects/@hocs/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/hocs/src/environments/environment.ts",
-                  "with": "projects/hocs/src/environments/environment.prod.ts"
+                  "replace": "projects/@hocs/src/environments/environment.ts",
+                  "with": "projects/@hocs/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -97,9 +94,36 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
+            "tsConfig": ["projects/@hocs/tsconfig.app.json", "projects/@hocs/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "@hocs/ngx-unsubscriber": {
+      "projectType": "library",
+      "root": "projects/@hocs/ngx-unsubscriber",
+      "sourceRoot": "projects/@hocs/ngx-unsubscriber/src",
+      "prefix": "hoc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/@hocs/ngx-unsubscriber/tsconfig.lib.json",
+            "project": "projects/@hocs/ngx-unsubscriber/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/@hocs/ngx-unsubscriber/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
             "tsConfig": [
-              "projects/hocs/tsconfig.app.json",
-              "projects/hocs/tsconfig.spec.json"
+              "projects/@hocs/ngx-unsubscriber/tsconfig.lib.json",
+              "projects/@hocs/ngx-unsubscriber/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
