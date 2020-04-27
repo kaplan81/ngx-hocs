@@ -2,8 +2,6 @@
 
 > Higher-oder Angular 9+ components monorepo.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
-
 ## Purpose
 
 To create a hub of libraries that contain higher-oder components that can be used by the Angular community.
