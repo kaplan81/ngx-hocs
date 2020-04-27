@@ -48,5 +48,6 @@ You have resolved the unsubscription problem with 2 lines of code:
 
 ```ts
 @Unsubscriber()
-takeUntil((this as any).destroyed$)
+[...]
+  takeUntil((this as any).destroyed$)
 ```
