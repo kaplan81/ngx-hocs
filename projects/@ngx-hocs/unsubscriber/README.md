@@ -51,3 +51,5 @@ You have resolved the unsubscription problem with 2 lines of code:
 [...]
   takeUntil((this as any).destroyed$)
 ```
+
+Happy Angular coding!
