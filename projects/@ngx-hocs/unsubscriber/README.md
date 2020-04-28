@@ -81,7 +81,7 @@ And in your `tslint.json`:
 }
 ```
 
-## Golden rules
+## Conclusion
 
 You have resolved the unsubscription problem with 2 lines of code:
 
