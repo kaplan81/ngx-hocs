@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Unsubscriber } from '@ngx-hocs/unsubscriber';
+import { autoComplete, Unsubscriber } from '@ngx-hocs/unsubscriber';
 import { interval, Observable, Subscription } from 'rxjs';
-import { takeUntil, tap } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 
 @Unsubscriber()
 @Component({
@@ -13,9 +13,7 @@ export class UnsubscriberComponent implements OnInit, OnDestroy {
   subscription$$: Subscription;
 
   ngOnInit(): void {
-    this.subscription$$ = this.observable$
-      .pipe(tap(console.log), takeUntil((this as any).destroyed$))
-      .subscribe();
+    this.subscription$$ = this.observable$.pipe(tap(console.log), autoComplete(this)).subscribe();
   }
 
   ngOnDestroy(): void {

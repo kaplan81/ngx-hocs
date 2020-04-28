@@ -18,7 +18,7 @@ import { getComponentProp } from './utils/ivy.util';
  *
  *  ngOnInit(): void {
  *    this.subscription$$ = this.observable$
- *      .pipe(takeUntil((this as any).destroyed$))
+ *      .pipe(autoComplete(this))
  *      .subscribe();
  *  }
  *

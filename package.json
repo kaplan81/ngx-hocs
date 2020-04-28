@@ -1,6 +1,6 @@
 {
   "name": "ngx-hocs",
-  "version": "1.0.6",
+  "version": "1.1.6",
   "author": "Andres Gesteira",
   "license": "MIT",
   "keywords": [
@@ -45,6 +45,7 @@
     "ng-packagr": "^9.0.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
+    "rxjs-tslint-rules": "^4.31.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
