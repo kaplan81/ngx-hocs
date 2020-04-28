@@ -57,7 +57,11 @@ export class SubscribedComponent implements OnInit, OnDestroy {
 obs$.pipe(shareReplay({ refCount: true }), autoComplete(this))
 ```
 
-To avoid surprises it is recommended that you always use the signature that takes the config parameter. And if you want to make sure of that, you can use TSLint for that:
+## Recommendation
+
+To avoid surprises it is recommended that you always use the signature that takes the config parameter in `shareReplay`.
+
+If you want to make sure of that, you can use TSLint for that:
 
 ```bash
 npm i -D rxjs-tslint-rules
