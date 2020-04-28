@@ -24,7 +24,7 @@ You do not need to implement the `OnDestroy` interface so you would only need to
 
 ```ts
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { autoComplete, Unsubscriber } from '@ngx-hocs/unsubscriber';
+import { autoComplete, Unsubscriber } from 'ngx-hocs-unsubscriber';
 import { interval, Observable, Subscription } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
@@ -63,7 +63,7 @@ To avoid surprises it is recommended that you always use the signature that take
 npm i -D rxjs-tslint-rules
 ```
 
-And in your `tslint.json`
+And in your `tslint.json`:
 
 ```json
 {
@@ -71,16 +71,13 @@ And in your `tslint.json`
     "rxjs-tslint-rules"
   ],
   "rules": {
-    [...],
     "rxjs-no-sharereplay": {
       "options": [{
         "allowConfig": true
       }],
       "severity": "error"
     }
-    [...],
   }
-  [...],
 }
 ```
 
