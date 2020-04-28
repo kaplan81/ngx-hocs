@@ -4,7 +4,7 @@ import { getComponentProp } from './utils/ivy.util';
 
 /**
  * Automatically unsubscribes from observables in a component class
- * just by adding this: [obs]**`.pipe(takeUntil((this as any).destroyed$))`**[.subscribe()]`
+ * just by adding this: [obs]**`.pipe(autoComplete(this))`**[.subscribe()]`
  *
  * Optionally you can add extra actions to perform in ngOnDestroy().
  *

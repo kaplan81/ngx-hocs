@@ -36,7 +36,7 @@ export class SubscribedComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscription$$ = this.observable$
-      .pipe(tap(console.log), takeUntil(autoComplete(this))
+      .pipe(tap(console.log), autoComplete(this))
       .subscribe();
   }
 
